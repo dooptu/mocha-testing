@@ -8,8 +8,6 @@ function getValue() {
 
 }
 
-
-
 function login(username, password) {
     const obj = {"uname": "user1", "pwd": "123"}
     if (username === obj.uname && password === obj.pwd) {
@@ -62,14 +60,15 @@ function isValidDate(dateString) {
     if (day > monthDays || day === 0) {
       return false;
     }
-  
     // If all checks pass, return true
     return true;
   }
 
 //-----------------------------Is Valid Email------------------------------------
+
 function isValidEmail(email) {
     const emailRegex = /^\S+@\S+\.\S+$/;
+    console.log('1:' + emailRegex.test(email));
     return emailRegex.test(email);
   }
 
