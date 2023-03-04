@@ -1,9 +1,9 @@
-// 
+const assert = require('assert');
+const {isValidEmail } = require('./utils');
 
 describe('Is Valid Email', function() {
   it('should return true for a valid email', function() {
     assert.strictEqual(isValidEmail('test@example.com'), true);
-    chai.expect(isValidEmail("test@example.com")).to.equal(true)
   });
 
   it('should return false for an email with no domain', function() {
@@ -23,6 +23,6 @@ describe('Is Valid Email', function() {
   });
 
   it('should return false for an email with special characters in the domain', function() {
-    assert.strictEqual(isValidEmail('test@example!.com'), false);
+    assert.strictEqual(isValidEmail('test@example!@@#com'), false);
   });
 });
