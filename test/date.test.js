@@ -3,7 +3,7 @@ const { isValidDate } = require('./Functional/utils');
 
 describe("IS Valid Date", function () {
   it("should return true for valid date strings", function () {
-    assert.isTrue(isValidDate("2022-02-28"));
+    assert.isTrue(isValidDate("2022-02-282"));
 
   });
 
