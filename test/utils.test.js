@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {checkGender } = require('./utils');
+const {checkGender } = require('./Functional/utils');
 
 // Tạo test suite
 describe('Gender check', function() {

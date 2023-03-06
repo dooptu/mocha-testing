@@ -3,7 +3,9 @@
     "mocha": "^10.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "npm run build"
+
   },
   "dependencies": {
     "chai": "^4.3.7"

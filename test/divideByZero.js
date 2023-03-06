@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {divideByZero } = require('./utils');
+const {divideByZero } = require('./Functional/utils');
 describe("DivideByZero", () => {
   it("should throw an error when dividing by zero", () => {
     assert.throws(() => divideByZero(1, 0), Error);

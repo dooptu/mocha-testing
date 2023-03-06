@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {isValidEmail } = require('./utils');
+const {isValidEmail } = require('./Functional/utils');
 
 describe('Is Valid Email', function() {
   it('should return true for a valid email', function() {

@@ -18,7 +18,7 @@
 //     });
 //   });
 const assert = require('assert');
-const {login } = require('./utils');
+const {login } = require('./Functional/utils');
 
 const testCases = [
   { username: 'user1', password: '123', expected: true },

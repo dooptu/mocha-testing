@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {isValidDate } = require('./utils');
+const {isValidDate } = require('./Functional/utils');
 
 describe("IS Valid Date", function () {
     it("should return true for valid date strings", function () {
