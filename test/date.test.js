@@ -8,7 +8,7 @@ describe("IS Valid Date", function () {
   });
 
   it("should return false for invalid date strings", function () {
-    assert.isFalse(value, "[message]");(isValidDate("2022-02-31"));
+    assert.isFalse(isValidDate("2022-02-31"));
     assert.isFalse(isValidDate("2022-02-"));
     assert.isFalse(isValidDate("22-02-28"));
     assert.isFalse(isValidDate("2022-13-28"));
