@@ -1,9 +1,9 @@
 const assert = require('assert');
 const {checkGender } = require('./Functional/utils');
 
-// Tạo test suite
+
 describe('Gender check', function() {
-  // Tạo test case cho giới tính nam
+
   it('should return "male" for a male user', function() {
     const user = {
       name: 'John',
@@ -13,7 +13,7 @@ describe('Gender check', function() {
     assert.strictEqual(result, 'male');
   });
 
-  // Tạo test case cho giới tính nữ
+
   it('should return "female" for a female user', function() {
     const user = {
       name: 'Jane',
@@ -23,7 +23,7 @@ describe('Gender check', function() {
     assert.strictEqual(result, 'female');
   });
 
-  // Tạo test case cho giới tính không xác định
+
   it('should return "unknown" for an unknown gender', function() {
     const user = {
       name: 'Alex',
@@ -33,3 +33,6 @@ describe('Gender check', function() {
     assert.strictEqual(result, 'unknown');
   });
 });
+
+
+//Để đảm bảo rằng nó hoạt đọng chính xác với giá trị đầu vào

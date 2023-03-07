@@ -26,3 +26,12 @@ describe('Is Valid Email', function() {
     assert.strictEqual(isValidEmail('test@example!@@#com'), false);
   });
 });
+
+
+
+
+
+
+
+
+//Đảm bảo tính ổn định và độ tin cậy của ứng dụng

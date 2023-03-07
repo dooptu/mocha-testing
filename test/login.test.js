@@ -1,22 +1,4 @@
-// describe('Test Result', function() {
-//     it('should return true for valid username and password', function() {
-//       const result = login('username', 'password');
-//       chai.assert.strictEqual(result, true);
-//       document.getElementById('result').innerHTML = 'Test Passed';
-//     });
-  
-//     it('should return false for invalid username', function() {
-//       const result = login('invalid_username', 'password');
-//       chai.assert.strictEqual(result, false);
-//       document.getElementById('result').innerHTML = 'Test Passed';
-//     });
-  
-//     it('should return false for invalid password', function() {
-//       const result = login('username', 'invalid_password');
-//       chai.assert.strictEqual(result, false);
-//       document.getElementById('result').innerHTML = 'Test Passed';
-//     });
-//   });
+
 const assert = require('assert');
 const {login } = require('./Functional/utils');
 

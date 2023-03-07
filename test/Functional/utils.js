@@ -8,7 +8,7 @@ function checkGender(user) {
   }
 }
 
-// -------------------------------------------------------------
+// ------------------------------LOGIN-------------------------------
 
 function login(username, password) {
   const obj = { "uname": "user1", "pwd": "123" }
@@ -20,7 +20,7 @@ function login(username, password) {
     return false;
   }
 }
-// -------------------------------------------------------------
+// -----------------------------isValidDate--------------------------------
 function isValidDate(dateString) {
   // First check for the pattern
   if (!/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
@@ -33,21 +33,19 @@ function isValidDate(dateString) {
   const month = parseInt(parts[1], 10);
   const day = parseInt(parts[2], 10);
 
-  // Check the ranges of month and year
   if (year < 1000 || year > 3000 || month === 0 || month > 12) {
     return false;
   }
 
-  // Check the number of days in the month
   const monthDays = new Date(year, month, 0).getDate();
   if (day > monthDays || day === 0) {
     return false;
   }
-  // If all checks pass, return true
+
   return true;
 }
 
-// -------------------------------------------------------------
+// ----------------------------isValidEmail---------------------------------
 
 function isValidEmail(email) {
   const emailRegex = /^\S+@\S+\.\S+$/;
@@ -58,7 +56,7 @@ function isValidEmail(email) {
 
 
 
-// ------------------------------------------------------------
+// ----------------------------divideByZero--------------------------------
 function divideByZero(a, b) {
   if (b === 0) {
     throw new Error("Cannot divide by zero!");
